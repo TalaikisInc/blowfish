@@ -1,6 +1,6 @@
 {
-  "name": "egoroof-blowfish",
-  "version": "2.2.0",
+  "name": "@talaikis/egoroof-blowfish",
+  "version": "0.0.1",
   "description": "Blowfish encryption library for browsers and Node.js",
   "main": "dist/blowfish.js",
   "types": "./egoroof-blowfish.d.ts",
@@ -15,7 +15,10 @@
     "mocha": "mocha",
     "preversion": "npm test",
     "version": "git add package.json package-lock.json",
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags && npm publish",
+    "upgrade:list": "ncu",
+    "upgrade:install": "ncu -u",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -42,13 +45,14 @@
   },
   "homepage": "https://github.com/egoroof/blowfish#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/cli": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "eslint": "^5.16.0",
-    "mocha": "^6.1.4",
-    "rollup": "^1.12.3",
-    "uglify-js": "^3.5.13"
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.3.0",
+    "mocha": "^6.2.0",
+    "npm-check-updates": "^3.1.21",
+    "rollup": "^1.20.3",
+    "uglify-js": "^3.6.0"
   },
   "engines": {
     "node": ">=4.0.0"

@@ -10,7 +10,7 @@
 
 [Blowfish](https://en.wikipedia.org/wiki/Blowfish_(cipher)) encryption library for browsers and Node.js.
 
-Works in Node.js 4+, IE10+ and all modern browsers.
+Fork updates dependencies and fixes PKCS5 padding (by @sylvainPenbase).
 
 ## Table of Contents
 
